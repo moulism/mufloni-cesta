@@ -1,0 +1,9 @@
+{
+  "git.enableSmartCommit": true,
+  "git.smartCommitChanges": "all",
+  "git.postCommitCommand": "sync",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "liveServer.settings.root": "/"
+}

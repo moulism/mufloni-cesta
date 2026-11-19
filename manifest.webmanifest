@@ -1,0 +1,15 @@
+{
+  "name": "Mufloní cesta",
+  "short_name": "Mufloní cesta",
+  "description": "Venkovní hry po stopách Velkého Muflona",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f1a14",
+  "theme_color": "#0f1a14",
+  "lang": "cs",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

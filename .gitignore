@@ -1,0 +1,5 @@
+# soukromý zdroj cest s kódy – NIKDY na GitHub
+private/
+.DS_Store
+node_modules/
+*.log

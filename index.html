@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mufloní cesta – venkovní hry po stopách Velkého Muflona</title>
+  <meta name="description" content="Mufloní cesta: venkovní hry s příběhem. Odpočet, přihlášení e-mailem, deník, kódy ze stanovišť, fotka v cíli. Levely Easy až Hardcore.">
+  <meta name="theme-color" content="#0f1a14">
+  <meta property="og:title" content="Mufloní cesta">
+  <meta property="og:description" content="Vyber cestu, přihlas se, následuj deník Velkého Muflona a vyfoť se v cíli.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="demo-bar"></div>
+  <header id="nav"></header>
+  <main id="app"><div class="loader">Načítám stezky…</div></main>
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div><b>Mufloní cesta</b><p class="muted tiny">Venkovní hry po stopách Velkého Muflona.</p></div>
+      <div class="tiny"><a href="#/cesty">Cesty</a> · <a href="#/galerie">Galerie</a> · <a href="#/jak-to-funguje">Pravidla a FAQ</a> · <a href="#/profil">Profil</a></div>
+      <div class="tiny muted">🆘 Nouze: <a href="tel:112">112</a> · Horská služba <a href="tel:1210">1210</a></div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script>
+    // Supabase knihovnu načteme jen když je vyplněná v config.js
+    if (window.MC_CONFIG.SUPABASE_URL) document.write('<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"><\/script>');
+  </script>
+  <script src="data/cesty.js"></script>
+  <script src="js/crypto.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/denik.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
